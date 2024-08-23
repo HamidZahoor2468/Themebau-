@@ -1,0 +1,1210 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2.3.0/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2.3.0/dist/flickity.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .carousel-cell {
+        width: 40%;
+    }
+    
+    .main-carousal {
+        width: 100%;
+    }
+    /* position dots up a bit */
+    /* position dots up a bit */
+    
+    .main-carousel .flickity-page-dots {
+        bottom: -40px;
+    }
+    /* dots are lines */
+    
+    .main-carousel .flickity-page-dots .dot {
+        height: 2px;
+        width: 70px;
+        margin: 0;
+        border-radius: 0;
+        background-color: white;
+    }
+    
+    .main-carousal2 {
+        width: 100%;
+    }
+    
+    .carousel-cell2 {
+        width: 33%;
+    }
+    
+    .main-carousel2 .flickity-page-dots {
+        bottom: -40px;
+    }
+    /* dots are lines */
+    
+    .main-carousel2 .flickity-page-dots .dot {
+        height: 2px;
+        width: 70px;
+        margin: 0;
+        border-radius: 0;
+        background-color: white;
+    }
+    
+    .circle {
+        margin-left: 100px;
+        height: 500px;
+        width: 500px;
+        border-radius: 50%;
+        margin-top: -250px;
+    }
+    
+    .circle2 {
+        margin-right: -80px;
+        float: right;
+        height: 500px;
+        width: 500px;
+        border-radius: 50%;
+        margin-top: -290px;
+    }
+    
+    .circle3 {
+        margin-right: -80px;
+        float: right;
+        height: 500px;
+        width: 500px;
+        border-radius: 50%;
+        margin-top: -620px;
+    }
+    
+    .x5 {
+        margin-top: -200px;
+        z-index: 0;
+    }
+    
+    .x6 {
+        background-color: black;
+    }
+    
+    .x30 .x6 {
+        background: none;
+        border: 0;
+    }
+    
+    .x30 .x6 h4 {
+        font-size: 10px;
+    }
+    
+    .x7:hover {
+        transform: translateY(-10px);
+        transition: all 0.5s ease;
+    }
+    
+    .x10 {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    
+    .x9 {
+        display: inline;
+        position: relative;
+        padding: 20px;
+        font-size: 16px;
+    }
+    
+    .x30 {
+        display: none;
+        left: 0;
+        right: 0;
+    }
+    
+    .x9:nth-child(1):hover .x30 {
+        transition: all 1s ease;
+        display: block;
+    }
+    
+    .x11 {
+        font-weight: 500;
+    }
+    
+    .x9:hover {
+        cursor: pointer;
+    }
+    
+    ul li ul {
+        position: absolute;
+        left: 0%;
+        list-style: none;
+        background-color: black;
+        width: 215px;
+        top: 100%;
+        line-height: 28px;
+        display: none;
+        z-index: 1;
+    }
+    
+    ul li:hover ul {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .x9 ul li {
+        align-items: center;
+        font-size: 16px;
+    }
+    
+    .x8 {
+        list-style-type: none;
+    }
+    
+    .x12 {
+        display: flex;
+        align-items: center;
+    }
+    
+    .x13 {
+        font-size: 20px;
+    }
+    
+    .x8 .x9 li {
+        position: relative;
+    }
+    
+    .x8 .x9 ul li:hover ul {
+        cursor: pointer;
+        display: block;
+    }
+    
+    .x8 .x9 ul li ul {
+        position: absolute;
+        left: 114%;
+        top: -86%;
+        display: none;
+    }
+    
+    .btn {
+        border-radius: 0;
+        height: 58px;
+        width: 178px;
+    }
+    
+    .x5 p {
+        font-size: 18px;
+    }
+    
+    .x17 {
+        font-size: 18px;
+    }
+    
+    .x18 {
+        overflow: hidden;
+    }
+    
+    .x19 {
+        margin-top: -80px;
+    }
+    
+    .x20 {
+        background-color: #F4F4F4;
+    }
+    
+    .x21 {
+        font-size: 16px;
+        line-height: 31px;
+    }
+    
+    .x22 {
+        display: flex;
+    }
+    
+    .x23 {
+        font-size: 48px;
+        margin-left: -60px;
+    }
+    
+    .x24 {
+        height: 350px;
+        width: 350px;
+        border-radius: 0;
+    }
+    
+    .x23:hover {
+        transition: all 1s ease;
+        font-size: 60px;
+        /* margin-bottom: 10px; */
+        margin-left: 10px;
+    }
+    
+    .progress {
+        width: 91%;
+        height: 1px;
+    }
+    
+    @media (max-width :1024px) {
+        .x5 {
+            margin-top: -150px;
+        }
+    }
+    
+    @media (max-width :768px) {
+        .x5 {
+            margin-top: 0px;
+        }
+        .x24 {
+            height: 250px;
+            width: 250px;
+            border-radius: 0;
+        }
+        .display-1 {
+            font-size: 4rem;
+        }
+        .progress {
+            width: 94%;
+        }
+        .x23:hover {
+            transition: all 1s ease;
+            font-size: 40px;
+            /* margin-bottom: 10px; */
+            margin-left: 10px;
+        }
+    }
+    
+    @media (max-width :426px) {
+        .x5 p {
+            font-size: 14px;
+        }
+        .x17 {
+            font-size: 14px;
+        }
+        .x24 {
+            height: 150px;
+            width: 150px;
+            border-radius: 0;
+        }
+    }
+    
+    @media (max-width :376px) {
+        .display-1 {
+            font-size: 2rem;
+        }
+        .x25 {
+            font-size: 33px;
+        }
+        .x26 {
+            font-size: 19px;
+        }
+        .x23 {
+            margin-top: 10px;
+        }
+        .x27 {
+            font-size: 26px;
+        }
+        .x24 {
+            height: 120px;
+            width: 120px;
+        }
+        .x28 {
+            font-size: 14px;
+        }
+        .x21 {
+            font-size: 14px;
+        }
+    }
+    
+    @media (max-width :321px) {
+        .x25 {
+            font-size: 29px;
+        }
+        .x27 {
+            font-size: 26px;
+        }
+        .x24 {
+            height: 100px;
+            width: 100px;
+        }
+        .x21 {
+            font-size: 14px;
+        }
+        .x28 {
+            font-size: 14px;
+        }
+    }
+    .x31{height: 400px;}
+</style>
+
+
+<body style="background-color: black;">
+    <!-- section 1 -->
+    <div class="container-fluid x31">
+        <!-- Large screens navbar -->
+        <header class="d-xl-block d-lg-block d-md-block d-sm-block d-block">
+            <nav class="x10 text-light navbar navbar-expand-lg">
+                <a href="#" class="x13 text-light pt-3 ml-xl-4 ml-lg-4">Themebau.</a>
+    
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#fff; font-size:28px;"></i></span>
+                </button>
+    
+                <div class="collapse navbar-collapse x12 mr-4" id="collapsibleNavbar">
+                    <ul class="navbar-nav ml-auto x8 pt-3 pr-4">
+                        <li class="nav-item x9">
+                            <a class="nav-link x11 text-light">Home</a>
+                            <div class="container-fluid x30">
+                                <div class="container-fluid x30">
+                                    <div class="row">
+                                        <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 ">
+                                            <div class="card text-center x6 ">
+                                                <img class="card-img-top x7 " src="images/main-home-740-600.jpg " alt="Card image ">
+                                                <div class="card-body ">
+                                                    <h4 class="card-title text-light ">Main Home</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 ">
+                                            <div class="card text-center x6 ">
+                                                <img class="card-img-top x7 " src="images/simple-portfolio-740-600.jpg " alt="Card image ">
+                                                <div class="card-body ">
+                                                    <h4 class="card-title text-light ">Simple Porfolio</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 ">
+                                            <div class="card text-center x6 ">
+                                                <img class="card-img-top x7 " src="images/creative-agency-740-600.jpg " alt="Card image ">
+                                                <div class="card-body ">
+                                                    <h4 class="card-title text-light ">Creative Agency</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 ">
+                                            <div class="card text-center x6 ">
+                                                <img class="card-img-top x7 " src="images/freelancer-portfolio-740-600.jpg " alt="Card image ">
+                                                <div class="card-body ">
+                                                    <h4 class="card-title text-light ">Freelancer Portfolio</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 ">
+                                            <div class="card text-center x6 ">
+                                                <img class="card-img-top x7 " src="images/interactive-dark-740-600.jpg " alt="Card image ">
+                                                <div class="card-body ">
+                                                    <h4 class="card-title text-light ">Intractive Dark</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 ">
+                                            <div class="card text-center x6 ">
+                                                <img class="card-img-top x7 " src="images/digital-agency-740-600.jpg " alt="Card image ">
+                                                <div class="card-body ">
+                                                    <h4 class="card-title text-light ">Digital Agency</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 ">
+                                            <div class="card text-center x6 ">
+                                                <img class="card-img-top x7 " src="images/fullscreen-slider-740-362.jpg " alt="Card image ">
+                                                <div class="card-body ">
+                                                    <h4 class="card-title text-light ">Fullscreen Slider</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 ">
+                                            <div class="card text-center x6 ">
+                                                <img class="card-img-top x7 " src="images/carousel-light-740-362.jpg " alt="Card image ">
+                                                <div class="card-body ">
+                                                    <h4 class="card-title text-light ">Carousel light</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 ">
+                                            <div class="card text-center x6 ">
+                                                <img class="card-img-top x7 " src="images/carousel-dark-740-362.jpg " alt="Card image ">
+                                                <div class="card-body ">
+                                                    <h4 class="card-title text-light ">Carousel Dark</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 ">
+                                            <div class="card text-center x6 ">
+                                                <img class="card-img-top x7 " src="images/interactive-light-740-600.jpg " alt="Card image ">
+                                                <div class="card-body ">
+                                                    <h4 class="card-title text-light ">Intractive Light</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 ">
+                                            <div class="card text-center x6 ">
+                                                <img class="card-img-top x7 " src="images/left-menu-740-600.jpg " alt="Card image ">
+                                                <div class="card-body ">
+                                                    <h4 class="card-title text-light ">Left Menu</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12 ">
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item x9">
+                            <a class="nav-link x11 text-light">Projects</a>
+                             <ul class="m-0 p-4 pl-5 ">
+                                    <li class="d-flex justify-content-between align-center x14 ">1 column<i class="fas fa-chevron-right "></i>
+                                        <ul class="m-0 p-4 x15 ">
+                                            <li class="d-flex justify-content-between align-center ">style 1</li>
+                                            <li class="d-flex justify-content-between align-center ">style 2</li>
+                                        </ul>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-center ">2 column<i class="fas fa-chevron-right "></i>
+                                        <ul class="m-0 p-4 x15 ">
+                                            <li class="d-flex justify-content-between align-center ">style 1</li>
+                                            <li class="d-flex justify-content-between align-center ">style 2</li>
+                                            <li class="d-flex justify-content-between align-center ">style 3</li>
+                                            <li class="d-flex justify-content-between align-center ">style 4</li>
+                                            <li class="d-flex justify-content-between align-center ">style 5</li>
+                                            <li class="d-flex justify-content-between align-center ">style 6</li>
+                                        </ul>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-center ">3 column<i class="fas fa-chevron-right "></i>
+                                        <ul class="m-0 p-4 x15 ">
+                                            <li class="d-flex justify-content-between align-center ">style 1</li>
+                                            <li class="d-flex justify-content-between align-center ">style 2</li>
+                                            <li class="d-flex justify-content-between align-center ">style 3</li>
+                                            <li class="d-flex justify-content-between align-center ">style 4</li>
+                                            <li class="d-flex justify-content-between align-center ">style 5</li>
+                                        </ul>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-center ">4 column<i class="fas fa-chevron-right "></i>
+                                        <ul class="m-0 p-4 x15 ">
+                                            <li class="d-flex justify-content-between align-center ">style 1</li>
+                                            <li class="d-flex justify-content-between align-center ">style 2</li>
+                                            <li class="d-flex justify-content-between align-center ">style 3</li>
+                                            <li class="d-flex justify-content-between align-center ">style 4</li>
+                                        </ul>
+                                    </li>
+                                    <li class="d-flex justify-content-between align-center ">Single works<i class="fas fa-chevron-right "></i>
+                                        <ul class="m-0 p-4 x15 ">
+                                            <li class="d-flex justify-content-between align-center ">style 1</li>
+                                            <li class="d-flex justify-content-between align-center ">style 2</li>
+                                            <li class="d-flex justify-content-between align-center ">style 3</li>
+                                            <li class="d-flex justify-content-between align-center ">style 4</li>
+                                            <li class="d-flex justify-content-between align-center ">style 5</li>
+                                            <li class="d-flex justify-content-between align-center ">style 6</li>
+                                        </ul>
+
+                                    </li>
+
+                                </ul>
+                        </li>
+                        <li class="x9 "><a class="x11 text-light nav-link">pages</a>
+                            <ul class="m-0 p-4 ">
+                                <li class="d-flex justify-content-between align-center x14 ">About us<i class="fas fa-chevron-right "></i>
+                                    <ul class="m-0 p-4 x15 ">
+                                        <li class="d-flex justify-content-between align-center ">About us</li>
+                                        <li class="d-flex justify-content-between align-center ">About us 2</li>
+                                        <li class="d-flex justify-content-between align-center ">About me</li>
+                                    </ul>
+                                </li>
+                                <li class="d-flex justify-content-between align-center ">Services<i class="fas fa-chevron-right "></i>
+                                    <ul class="m-0 p-4 x15 ">
+                                        <li class="d-flex justify-content-between align-center ">Service</li>
+                                        <li class="d-flex justify-content-between align-center ">Single Service</li>
+                                    </ul>
+                                </li>
+                                <li class="d-flex justify-content-between align-center ">Blog<i class="fas fa-chevron-right "></i>
+                                    <ul class="m-0 p-4 x15 ">
+                                        <li class="d-flex justify-content-between align-center ">3 column</li>
+                                        <li class="d-flex justify-content-between align-center ">1 column</li>
+                                        <li class="d-flex justify-content-between align-center ">Single Post</li>
+                                    </ul>
+                                </li>
+                                <li class="d-flex justify-content-between align-center ">Coming soon</li>
+                                <li class="d-flex justify-content-between align-center ">404</li>
+
+                            </ul>
+                        </li>
+                        <li class="x9 "><a class="nav-link x11 text-light ">contact</a>
+                            <ul class="m-0 p-4 ">
+                                <li class="d-flex justify-content-between align-center x14 ">contact 1
+                                    <li class="d-flex justify-content-between align-center ">contact 2
+
+                        </ul>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn bg-light border-radius-0 btn-lg">Purchase <strong>.</strong></button>
+                </div>
+            </nav>
+        </header>
+    
+      
+    </div>
+    
+        <!-- section 2 -->
+        <div data-aos="fade-up">
+            <div class="container-fluid ">
+                <div class="container ">
+                    <div class="row ">
+                        <div class="col text-center text-light pb-5 pt-xl-0 pt-lg-0 pt-md-5 pt-sm-5 pt-5 x5 ">
+                            <h1 class="display-1 "><strong>Themebau.</strong> </h1>
+                            <p>Themebau is a stylish universal template for all your projects & creative <br class="d-xl-block d-lg-block d-md-block d-sm-none d-none ">output. Minimalistic and easy to use, it has everything you need to<br class="d-xl-block
+                    d-lg-block d-md-block d-sm-none d-none "> launch your website.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section 3 -->
+        <div class="container-fluid ">
+            <div class="container ">
+
+                <div class="row " data-aos="fade-up">
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 ">
+                        <div class="card text-center x6 " data-aos="fade-up">
+                            <img class="card-img-top x7 " src="images/main-home-740-600.jpg " alt="Card image ">
+                            <div class="card-body ">
+                                <h4 class="card-title text-light ">Main Home</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 ">
+                        <div class="card text-center x6 " data-aos="fade-up">
+                            <img class="card-img-top x7 " src="images/simple-portfolio-740-600.jpg " alt="Card image ">
+                            <div class="card-body ">
+                                <h4 class="card-title text-light ">Simple Porfolio</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 ">
+                        <div class="card text-center x6 " data-aos="fade-up">
+                            <img class="card-img-top x7 " src="images/creative-agency-740-600.jpg " alt="Card image ">
+                            <div class="card-body ">
+                                <h4 class="card-title text-light ">Creative Agency</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row " data-aos="fade-up">
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 ">
+                        <div class="card text-center x6 " data-aos="fade-up">
+                            <img class="card-img-top x7 " src="images/freelancer-portfolio-740-600.jpg " alt="Card image ">
+                            <div class="card-body ">
+                                <h4 class="card-title text-light ">Freelancer Portfolio</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 ">
+                        <div class="card text-center x6 " data-aos="fade-up">
+                            <img class="card-img-top x7 " src="images/interactive-dark-740-600.jpg " alt="Card image ">
+                            <div class="card-body ">
+                                <h4 class="card-title text-light ">Intractive Dark</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 ">
+                        <div class="card text-center x6 " data-aos="fade-up">
+                            <img class="card-img-top x7 " src="images/digital-agency-740-600.jpg " alt="Card image ">
+                            <div class="card-body ">
+                                <h4 class="card-title text-light ">Digital Agency</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 ">
+                        <div class="card text-center x6 " data-aos="fade-up">
+                            <img class="card-img-top x7 " src="images/fullscreen-slider-740-362.jpg " alt="Card image ">
+                            <div class="card-body ">
+                                <h4 class="card-title text-light ">Fullscreen Slider</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 ">
+                        <div class="card text-center x6 " data-aos="fade-up">
+                            <img class="card-img-top x7 " src="images/carousel-light-740-362.jpg " alt="Card image ">
+                            <div class="card-body ">
+                                <h4 class="card-title text-light ">Carousel light</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 ">
+                        <div class="card text-center x6 " data-aos="fade-up">
+                            <img class="card-img-top x7 " src="images/carousel-dark-740-362.jpg " alt="Card image ">
+                            <div class="card-body ">
+                                <h4 class="card-title text-light ">Carousel Dark</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 ">
+                        <div class="card text-center x6 " data-aos="fade-up">
+                            <img class="card-img-top x7 " src="images/interactive-light-740-600.jpg " alt="Card image ">
+                            <div class="card-body ">
+                                <h4 class="card-title text-light ">Intractive Light</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 ">
+                        <div class="card text-center x6 " data-aos="fade-up">
+                            <img class="card-img-top x7 " src="images/left-menu-740-600.jpg " alt="Card image ">
+                            <div class="card-body ">
+                                <h4 class="card-title text-light ">Left Menu</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 ">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section 4 -->
+        <div class="container-fluid bg-light ">
+            <div class="container pt-5 pb-5 ">
+                <div class="row pt-5 mt-5 ">
+                    <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 ">
+                        <img src="images/left-menu-740-600.jpg " class="shadow " alt="Cinque Terre " style="height: 50%; width: 87%; float: left; ">
+                        <img src="images/demo-2-740-560.jpg " class="x16 shadow-lg " alt="Cinque Terre " style="margin-top: -80px; height: 46%; width: 74%; float: right; ">
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 pt-xl-5 pt-gl-5 pt-md-5 pt-sm-0 pt-0 text-xl-left text-lg-left text-md-center text-sm-center text-center ">
+                        <h1 class="x27 ">
+                            Present your work in a <br class="d-xl-block d-lg-block d-md-none d-sm-none d-none "> unique way 💪</h1>
+                        <p class="pl-xl-5 pl-lg-5 pl-md-0 pl-sm-0 pl-0 pt-5 mb-xl-0 mb-lg-0 mb-md-3 mb-sm-3 mb-3 x17 "> Themebau has 1/2/3/4 columns layouts to <br class="d-xl-block d-lg-block d-md-none d-sm-none d-none
+                    "> showcase your work and collections. Choose <br class="d-xl-block d-lg-block d-md-none d-sm-none d-none "> between the 19 types of layouts to create <br class="d-xl-block d-lg-block d-md-none d-sm-none d-none "> your portfolio.</p>
+                        <button type="button " class="btn m-xl-5 m-lg-5 m-md-0 m-sm-0 m-0 text-light border-radius-0 btn-lg " style="background-color: black; ">view page <strong>.</strong> </button>
+
+
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col text-center mt-xl-0 mt-lg-0 mt-md-3 mt-sm-3 mt-3 ">
+                        <h4 class="x17 ">and more... 🔥</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- section 5 -->
+        <div class="container-fluid pl-0 pr-0 pt-5 pb-5 m-0 x18 ">
+            <div class="row ">
+                <div class="col pt-5 ">
+                    <h2 class="text-light text-center display-4 x25 ">Projects Showcase</h2>
+                    <div class="circle2 bg-dark ">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="row x19 ">
+                <div class="col pb-5 ">
+                    <div class="main-carousel ">
+                        <div class=" carousel-cell ">
+                            <div class="card border-0 ">
+                                <img class="card-img-top " style=" border-radius: 0; " src="images/portfolio-single-1-1000-958.jpg " alt="Card image ">
+
+                            </div>
+                        </div>
+                        <div class=" carousel-cell ">
+                            <div class="card border-0 " style=" background:none; ">
+                                <img class="card-img-top mt-xl-5 mt-lg-5 mt-md-4 mt-sm-4 mt-2 mx-auto d-block x24 " src="images/portfolio-single-2-660-660.jpg " alt="Card image ">
+
+                            </div>
+                        </div>
+                        <div class=" carousel-cell ">
+                            <div class="card border-0 ">
+                                <img class="card-img-top " style=" border-radius: 0; " src="images/portfolio-single-3-1000-958.jpg " alt="Card image ">
+
+                            </div>
+                        </div>
+                        <div class=" carousel-cell ">
+                            <div class="card border-0 " style=" background:none; ">
+                                <img class="card-img-top mt-xl-5 mt-lg-5 mt-md-4 mt-sm-4 mt-2 mx-auto d-block x24 " src="images/portfolio-single-4-660-660.jpg " alt="Card image ">
+
+                            </div>
+                        </div>
+                        <div class=" carousel-cell ">
+                            <div class="card border-0 ">
+                                <img class="card-img-top " style=" border-radius: 0; " src="images/portfolio-single-5-1000-958.jpg " alt="Card image ">
+
+                            </div>
+                        </div>
+                        <div class=" carousel-cell ">
+                            <div class="card border-0 " style=" background:none; ">
+                                <img class="card-img-top mt-xl-5 mt-lg-5 mt-md-4 mt-sm-4 mt-2 mx-auto d-block x24 " src="images/portfolio-single-6-660-660.jpg " alt="Card image ">
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section 6 -->
+        <div class="container-fluid bg-light ">
+            <div class="container ">
+                <div class="row ml-xl-5 ml-lg-5 ml-md-0 ml-sm-0 ml-0 pt-5 ">
+                    <div class="col-xl-6 col-lg-6 p-xl-5 p-lg-5 p-md-0 p-sm-0 p-0 text-xl-left text-lg-left text-md-center text-sm-center text-center ">
+                        <h1 class="x25 ">
+                            Practical Inner pages<br class="d-xl-block d-lg-block d-md-none d-sm-none d-none "> for everything you <br class="d-xl-block d-lg-block d-md-none d-sm-none d-none "> may need.</h1>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 x17 text-xl-left text-lg-left text-md-center text-sm-center text-center p-xl-5 p-lg-5 p-md-0 p-sm-0 p-0 ">
+                        <p>
+                            Themebau is packed with a set of practical<br class="d-xl-block d-lg-block d-md-none d-sm-none d-none "> inner pages for various uses. Choose your<br class="d-xl-block d-lg-block d-md-none d-sm-none d-none "> favorites & customize
+                            them to your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section 7 -->
+        <div class="container-fluid bg-light ">
+            <div class="container pt-5 pb-5 ">
+
+                <div class="row ">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 ">
+                        <div class="card text-center bg-light border-0 x6 ">
+                            <img class="card-img-top x7 shadow-sm " src="images/about-us-540-460.jpg " alt="Card image ">
+                            <div class="card-body ">
+                                <h4 class="card-title text-dark ">About Us</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 ">
+                        <div class="card text-center bg-light border-0 x6 ">
+                            <img class="card-img-top x7 shadow-sm " src="images/about-us-2-540-460.jpg " alt="Card image ">
+                            <div class="card-body ">
+                                <h4 class="card-title text-dark ">About Us</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 ">
+                        <div class="card text-center bg-light border-0 x6 ">
+                            <img class="card-img-top x7 shadow-sm " src="images/about-me-540-460.jpg " alt="Card image ">
+                            <div class="card-body ">
+                                <h4 class="card-title text-dark ">About me</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 ">
+                        <div class="card text-center bg-light border-0 x6 ">
+                            <img class="card-img-top x7 shadow-sm " src="images/services-540-460.jpg " alt="Card image ">
+                            <div class="card-body ">
+                                <h4 class="card-title text-dark ">Services</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 ">
+                        <div class="card text-center bg-light border-0 x6 ">
+                            <img class="card-img-top x7 shadow-sm " src="images/single-service-540-460.jpg " alt="Card image ">
+                            <div class="card-body ">
+                                <h4 class="card-title text-dark ">Single service</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 ">
+                        <div class="card text-center bg-light border-0 x6 ">
+                            <img class="card-img-top x7 shadow-sm " src="images/contact-us-540-460.jpg " alt="Card image ">
+                            <div class="card-body ">
+                                <h4 class="card-title text-dark ">Contact Us</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 ">
+                        <div class="card text-center bg-light border-0 x6 ">
+                            <img class="card-img-top x7 shadow-sm " src="images/contact-us-2-540-460.jpg " alt="Card image ">
+                            <div class="card-body ">
+                                <h4 class="card-title text-dark ">Contact Us V.2</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 ">
+                        <div class="card text-center bg-light border-0 x6 ">
+                            <img class="card-img-top x7 shadow-sm " src="images/404-540-460.jpg " alt="Card image ">
+                            <div class="card-body ">
+                                <h4 class="card-title text-dark ">404 Page</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 ">
+                        <div class="card text-center bg-light border-0 x6 ">
+                            <img class="card-img-top x7 shadow-sm " src="images/blog-540-460.jpg " alt="Card image ">
+                            <div class="card-body ">
+                                <h4 class="card-title text-dark ">Blog</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 ">
+                        <div class="card text-center bg-light border-0 x6 ">
+                            <img class="card-img-top x7 shadow-sm " src="images/blog-2-540-460.jpg " alt="Card image ">
+                            <div class="card-body ">
+                                <h4 class="card-title text-dark ">Blog V.2</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 ">
+                        <div class="card text-center bg-light border-0 x6 ">
+                            <img class="card-img-top x7 shadow-sm " src="images/single-post-540-460.jpg " alt="Card image ">
+                            <div class="card-body ">
+                                <h4 class="card-title text-dark ">Single Post</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12 ">
+                        <div class="card text-center bg-light border-0 x6 ">
+                            <img class="card-img-top x7 shadow-sm " src="images/coming-soon-540-264.jpg " alt="Card image ">
+                            <div class="card-body ">
+                                <h4 class="card-title text-dark ">Coming soon</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+        <!-- section 8 -->
+        <div class="container-fluid pl-0 pr-0 pt-5 pb-5 m-0 x18 ">
+            <div class="row ">
+                <div class="col pt-5 ">
+                    <h2 class="text-light text-center display-4 x25 ">Menu style</h2>
+                    <div class="circle2 bg-dark ">
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="row x19 ">
+                <div class="col pb-5 ">
+                    <div class="main-carousel2 ">
+                        <div class=" carousel-cell2 mr-3 mt-3 ">
+                            <div class="card border-0 " style="background-color: black; ">
+                                <img class="card-img-top x7 " src="images/classic-menu-740-362.jpg " alt="Card image ">
+                                <div class="card-body text-center ">
+                                    <h4 class="card-title text-light x26 ">Classic Menu</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" carousel-cell2 mr-3 mt-3 ">
+                            <div class="card border-0 " style="background-color: black; ">
+                                <img class="card-img-top x7 " src="images/white-left-menu-740-362.jpg " alt="Card image ">
+                                <div class="card-body text-center ">
+                                    <h4 class="card-title text-light x26 ">White Left Menu</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" carousel-cell2 mr-3 mt-3 ">
+                            <div class="card border-0 " style=" background-color: black; ">
+                                <img class="card-img-top x7 " src="images/classic-menu-740-362.jpg " alt="Card image ">
+                                <div class="card-body text-center ">
+                                    <h4 class="card-title text-light x26 ">Dark Center Menu</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class=" carousel-cell2 mr-3 mt-3 ">
+                            <div class="card border-0 x7 " style="background-color: black; ">
+                                <img class="card-img-top " src="images/white-left-menu-740-362.jpg " alt="Card image ">
+                                <div class="card-body text-center ">
+                                    <h4 class="card-title text-light x26 ">Left Menu</h4>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section 9 -->
+        <div class="container-fluid x20 ">
+            <div class="container pt-5 pb-5 ">
+                <div class="row pt-5 mt-5 ">
+                    <div class="col-xl-6 col-lg-6 ">
+                        <img src="images/responsive-1200-1070.jpg " class=" " alt="Cinque Terre " style="height: 100%; width: 90%; ">
+
+                    </div>
+                    <div class="col-xl-6 col-lg-6 pt-5 text-xl-left text-lg-left text-md-center text-sm-center text-center ">
+                        <h1 class="x25 ">
+
+                            Fully responsive and <br class="d-xl-block d-lg-block d-md-none d-sm-none d-none ">retina ready 👑</h1>
+                        <p class=" pt-5 x17 ">Themebau is designed to look great on desktop <br class="d-xl-block d-lg-block d-md-none d-sm-none d-none "> computers, tablets and mobile devices. Every <br class="d-xl-block d-lg-block d-md-none d-sm-none
+                    d-none "> element 100% responsive & retina ready.</p>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- section 10 -->
+        <div class="container-fluid bg-light ">
+            <div class="container p-xl-0 p-lg-0 p-md-5 p-sm-0 p-0 ml-xl-0 ml-lg-0 ml-md-4 ml-sm-0 ml-0 ">
+                <div class="row pt-5 ">
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 pl-xl-0 pl-lg-0 pl-md-5 pl-sm-0 p-0 ml-xl-0 ml-lg-0 ml-md-4 ml-sm-0 ml-0 ">
+
+                        <div class="media border p-3 border-0 ">
+                            <div class="feature-icon "><svg width="71 " height="70 " viewBox="0 0 71 70 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                            <path d="M5.18911 17.7887L35 0.57735L64.8109 17.7887V52.2113L35 69.4226L5.18911 52.2113V17.7887Z " stroke="currentColor "></path>
+                            <path d="M18.2867 65.3084L1.0754 35.4976L18.2867 5.68667H52.7094L69.9207 35.4976L52.7094 65.3084H18.2867Z " stroke="currentColor "></path></svg><svg width="17 " height="23 " style="margin-left:-43px ; " viewBox="0 0 17 23
+                    " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                            <path d="M1 11.5H10.2308C11.4548 11.5 12.6288 10.9469 13.4943 9.96231C14.3599 8.97774 14.8462 7.64239 14.8462 6.25C14.8462 4.85761 14.3599 3.52226 13.4943 2.53769C12.6288 1.55312 11.4548 1 10.2308 1H1V11.5ZM1 11.5H11.3846C12.6087
+                    11.5 13.7826 12.0531 14.6482 13.0377C15.5137 14.0223 16 15.3576 16 16.75C16 18.1424 15.5137 19.4777 14.6482 20.4623C13.7826 21.4469 12.6087 22 11.3846 22H1V11.5Z " stroke="currentColor " stroke-width="1.5 " stroke-linecap="round
+                    " stroke-linejoin="round "></path></svg></div>
+                            <div class="media-body pl-5 ">
+                                <h4>Bootstrap 4</h4>
+                                <p class="x28 ">Themebau based on Bootstrap 4, so layout<br class="d-xl-none d-lg-none d-md-block d-sm-none d-none "> changes is so much easily.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 pl-xl-0 pl-lg-0 pl-md-5 pl-sm-0 p-0 ml-xl-0 ml-lg-0 ml-md-4 ml-sm-0 ml-0 ">
+
+                        <div class="media border p-3 border-0 ">
+                            <div class="feature-icon "><svg width="71 " height="70 " viewBox="0 0 71 70 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                            <path d="M5.18911 17.7887L35 0.57735L64.8109 17.7887V52.2113L35 69.4226L5.18911 52.2113V17.7887Z " stroke="currentColor "></path>
+                            <path d="M18.2867 65.3084L1.0754 35.4976L18.2867 5.68667H52.7094L69.9207 35.4976L52.7094 65.3084H18.2867Z " stroke="currentColor "></path></svg><svg width="25 " height="21 " style="margin-left:-46px ; " viewBox=" 0 0 25 21
+                    " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                                <path d="M4.39014 19.6899V12.6899M4.39014 8.68994V1.68994M12.3901 19.6899V10.6899M12.3901 6.68994V1.68994M20.3901 19.6899V14.6899M20.3901 10.6899V1.68994M1.39014 12.6899H7.39014M9.39014 6.68994H15.3901M17.3901 14.6899H23.3901
+                    " stroke="currentColor " stroke-width="1.5 " stroke-linecap="round " stroke-linejoin="round "></path></svg></div>
+                            <div class="media-body pl-5 ">
+                                <h4>Sass Available</h4>
+                                <p class="x28 ">Easy customization with SASS variables. You<br class="d-xl-none d-lg-none d-md-block d-sm-none d-none "> can change colors, typography and more.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 pl-xl-0 pl-lg-0 pl-md-5 pl-sm-0 p-0 ml-xl-0 ml-lg-0 ml-md-4 ml-sm-0 ml-0 ">
+
+                        <div class="media border p-3 border-0 ">
+                            <div class="feature-icon "><svg width="71 " height="70 " viewBox="0 0 71 70 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                            <path d="M5.18911 17.7887L35 0.57735L64.8109 17.7887V52.2113L35 69.4226L5.18911 52.2113V17.7887Z " stroke="currentColor "></path>
+                            <path d="M18.2867 65.3084L1.0754 35.4976L18.2867 5.68667H52.7094L69.9207 35.4976L52.7094 65.3084H18.2867Z " stroke="currentColor "></path></svg><svg width="17 " height="25 " viewBox="0 0 17 25 " style="margin-left:-46px ;
+                    " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                                <path d="M8.5 1H4.75C3.75544 1 2.80161 1.40387 2.09835 2.12276C1.39509 2.84165 1 3.81667 1 4.83333C1 5.85 1.39509 6.82502 2.09835 7.54391C2.80161 8.2628 3.75544 8.66667 4.75 8.66667M8.5 1V8.66667M8.5 1H12.25C12.7425 1
+                    13.2301 1.09915 13.6851 1.2918C14.14 1.48444 14.5534 1.7668 14.9017 2.12276C15.2499 2.47872 15.5261 2.9013 15.7145 3.36638C15.903 3.83146 16 4.32993 16 4.83333C16 5.33673 15.903 5.83521 15.7145 6.30029C15.5261 6.76537 15.2499 7.18795 14.9017
+                    7.54391C14.5534 7.89987 14.14 8.18223 13.6851 8.37487C13.2301 8.56751 12.7425 8.66667 12.25 8.66667M8.5 8.66667H4.75M8.5 8.66667H12.25M8.5 8.66667V16.3333M4.75 8.66667C3.75544 8.66667 2.80161 9.07053 2.09835 9.78942C1.39509 10.5083 1 11.4833
+                    1 12.5C1 13.5167 1.39509 14.4917 2.09835 15.2106C2.80161 15.9295 3.75544 16.3333 4.75 16.3333M12.25 8.66667C11.7575 8.66667 11.2699 8.76582 10.8149 8.95846C10.36 9.1511 9.94657 9.43347 9.59835 9.78942C9.25013 10.1454 8.97391 10.568 8.78545
+                    11.033C8.597 11.4981 8.5 11.9966 8.5 12.5C8.5 13.0034 8.597 13.5019 8.78545 13.967C8.97391 14.432 9.25013 14.8546 9.59835 15.2106C9.94657 15.5665 10.36 15.8489 10.8149 16.0415C11.2699 16.2342 11.7575 16.3333 12.25 16.3333C12.7425 16.3333
+                    13.2301 16.2342 13.6851 16.0415C14.14 15.8489 14.5534 15.5665 14.9017 15.2106C15.2499 14.8546 15.5261 14.432 15.7145 13.967C15.903 13.5019 16 13.0034 16 12.5C16 11.9966 15.903 11.4981 15.7145 11.033C15.5261 10.568 15.2499 10.1454 14.9017
+                    9.78942C14.5534 9.43347 14.14 9.1511 13.6851 8.95846C13.2301 8.76582 12.7425 8.66667 12.25 8.66667ZM4.75 16.3333C3.75544 16.3333 2.80161 16.7372 2.09835 17.4561C1.39509 18.175 1 19.15 1 20.1667C1 21.1833 1.39509 22.1584 2.09835 22.8772C2.80161
+                    23.5961 3.75544 24 4.75 24C5.74456 24 6.69839 23.5961 7.40165 22.8772C8.10491 22.1584 8.5 21.1833 8.5 20.1667V16.3333M4.75 16.3333H8.5 " stroke="currentColor " stroke-width="1.5 " stroke-linecap="round " stroke-linejoin="round "></path></svg></div>
+                            <div class="media-body pl-5 ">
+                                <h4>Figma Files Included</h4>
+                                <p class="x28 ">We provided a source Figma file with<br class="d-xl-none d-lg-none d-md-block d-sm-none d-none "> Themebau.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pb-5 ">
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 pl-xl-0 pl-lg-0 pl-md-5 pl-sm-0 p-0 ml-xl-0 ml-lg-0 ml-md-4 ml-sm-0 ml-0 ">
+
+                        <div class="media border p-3 border-0 ">
+                            <div class="feature-icon "><svg width="71 " height="70 " viewBox="0 0 71 70 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                            <path d="M5.18911 17.7887L35 0.57735L64.8109 17.7887V52.2113L35 69.4226L5.18911 52.2113V17.7887Z " stroke="currentColor "></path>
+                            <path d="M18.2867 65.3084L1.0754 35.4976L18.2867 5.68667H52.7094L69.9207 35.4976L52.7094 65.3084H18.2867Z " stroke="currentColor "></path></svg><svg width="23 " height="20 " viewBox="0 0 23 20 " style="margin-left:-46px ;
+                    " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                                <path d="M20.3807 2.59133C19.8676 2.08683 19.2583 1.68663 18.5878 1.41358C17.9172 1.14054 17.1985 1 16.4727 1C15.7468 1 15.0281 1.14054 14.3576 1.41358C13.687 1.68663 13.0778 2.08683 12.5646 2.59133L11.4997 3.63785L10.4348
+                    2.59133C9.39834 1.57276 7.99258 1.00053 6.52679 1.00053C5.06099 1.00053 3.65523 1.57276 2.61876 2.59133C1.58229 3.6099 1 4.99139 1 6.43187C1 7.87235 1.58229 9.25383 2.61876 10.2724L11.4997 19L20.3807 10.2724C20.8941 9.76814 21.3013 9.16942
+                    21.5791 8.51045C21.857 7.85148 22 7.14517 22 6.43187C22 5.71857 21.857 5.01225 21.5791 4.35328C21.3013 3.69431 20.8941 3.09559 20.3807 2.59133Z " stroke="currentColor " stroke-width="1.5 " stroke-linecap="round " stroke-linejoin="round "></path></svg></div>
+                            <div class="media-body pl-5 ">
+                                <h4>Modern Design</h4>
+                                <p class="x28 ">High usability, organizing content, fully<br class="d-xl-none d-lg-none d-md-block d-sm-none d-none "> responsive design as per latest design trends.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 pl-xl-0 pl-lg-0 pl-md-5 pl-sm-0 p-0 ml-xl-0 ml-lg-0 ml-md-4 ml-sm-0 ml-0 ">
+
+                        <div class="media border p-3 border-0 ">
+                            <div class="feature-icon "><svg width="71 " height="70 " viewBox="0 0 71 70 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                            <path d="M5.18911 17.7887L35 0.57735L64.8109 17.7887V52.2113L35 69.4226L5.18911 52.2113V17.7887Z " stroke="currentColor "></path>
+                            <path d="M18.2867 65.3084L1.0754 35.4976L18.2867 5.68667H52.7094L69.9207 35.4976L52.7094 65.3084H18.2867Z " stroke="currentColor "></path></svg><svg width="24 " height="24 " viewBox="0 0 24 24 " style="margin-left:-46px ;
+                    " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                                <path d="M8.799 8.7C9.05761 7.96483 9.56807 7.34492 10.24 6.95005C10.9118 6.55518 11.7018 6.41083 12.4699 6.54258C13.238 6.67433 13.9347 7.07368 14.4366 7.66988C14.9385 8.26609 15.2132 9.02067 15.212 9.8C15.212 12 11.912
+                    13.1 11.912 13.1M12 17.5H12.011M23 12C23 18.0751 18.0751 23 12 23C5.92487 23 1 18.0751 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12Z " stroke="currentColor " stroke-width="1.5 " stroke-linecap="round " stroke-linejoin="round "></path></svg></div>
+                            <div class="media-body pl-5 ">
+                                <h4>Customer Support</h4>
+                                <p class="x28 ">We are here to help you if you have any queries<br class="d-xl-none d-lg-none d-md-block d-sm-none d-none "> about template.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 pl-xl-0 pl-lg-0 pl-md-5 pl-sm-0 p-0 ml-xl-0 ml-lg-0 ml-md-4 ml-sm-0 ml-0 ">
+
+                        <div class="media border p-3 border-0 ">
+                            <div class="feature-icon "><svg width="71 " height="70 " viewBox="0 0 71 70 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                            <path d="M5.18911 17.7887L35 0.57735L64.8109 17.7887V52.2113L35 69.4226L5.18911 52.2113V17.7887Z " stroke="currentColor "></path>
+                            <path d="M18.2867 65.3084L1.0754 35.4976L18.2867 5.68667H52.7094L69.9207 35.4976L52.7094 65.3084H18.2867Z " stroke="currentColor "></path></svg><svg width="23 " height="20 " viewBox="0 0 23 20 " style="margin-left:-46px ;
+                    " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                                <path d="M22 1.9979V7.99947M22 7.99947H16.2727M22 7.99947L17.5709 3.63833C16.545 2.56276 15.2758 1.77704 13.8818 1.3545C12.4877 0.931957 11.0142 0.886355 9.59882 1.22195C8.1834 1.55755 6.87217 2.2634 5.78749 3.27365C4.70281
+                    4.2839 3.88002 5.56562 3.39591 6.99921M1 18.0021V12.0005M1 12.0005H6.72727M1 12.0005L5.42909 16.3617C6.45499 17.4372 7.72417 18.223 9.11823 18.6455C10.5123 19.068 11.9858 19.1136 13.4012 18.778C14.8166 18.4425 16.1278 17.7366 17.2125 16.7263C18.2972
+                    15.7161 19.12 14.4344 19.6041 13.0008 " stroke="currentColor " stroke-width="1.5 " stroke-linecap="round " stroke-linejoin="round "></path></svg></div>
+                            <div class="media-body pl-5 ">
+                                <h4>Figma Files Included</h4>
+                                <p class="x28 ">Lifetime reliable and regular updates with your<br class="d-xl-none d-lg-none d-md-block d-sm-none d-none "> purchase.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- section 11 -->
+        <div class="container-fluid pl-0 pr-0 pt-5 pb-5 m-0 p-xl-0 p-lg-0 p-md-5 p-sm-5 p-5 ml-xl-0 ml-lg-0 ml-md-0 ml-sm-0 ml-0 text-light x18 ">
+
+            <div class="row p-xl-5 p-lg-5 p-md-5 p-sm-0 p-0 ">
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 pt-xl-5 pt-lg-5 pt-md-0 pt-sm-0 pt-0 x21 ">
+                    <div class="x22 ">
+                        <i class="far fa-star " style="font-size:20px; margin-right: 10px; "></i>
+                        <p>11 Homepage variations</p>
+                    </div>
+                    <div class="x22 ">
+                        <i class="far fa-star " style="font-size:20px; margin-right: 10px; "></i>
+                        <p>19 Portfolio styles & 6 Single Projects pages</p>
+                    </div>
+                    <div class="x22 ">
+                        <i class="far fa-star " style="font-size:20px; margin-right: 10px; "></i>
+                        <p>4 Menu & 3 Footer styles</p>
+                    </div>
+                    <div class="x22 ">
+                        <i class="far fa-star " style="font-size:20px; margin-right: 10px; "></i>
+                        <p>Creative Blog & Inner pages
+
+                    </div>
+
+                    <div class="x22 ">
+                        <i class="far fa-star " style="font-size:20px; margin-right: 10px; "></i>
+                        <p>Creative Blog & Inner pages
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 pt-xl-5 pt-lg-5 pt-md-0 pt-sm-0 pt-0 x21 ">
+                    <div class="x22 ">
+                        <i class="far fa-star " style="font-size:20px; margin-right: 10px; "></i>
+                        <p>Gulp Tooling to automate the Workflow</p>
+                    </div>
+                    <div class="x22 ">
+                        <i class="far fa-star " style="font-size:20px; margin-right: 10px; "></i>
+                        <p>W3C valid HTML</p>
+                    </div>
+                    <div class="x22 ">
+                        <i class="far fa-star " style="font-size:20px; margin-right: 10px; "></i>
+                        <p>Easy customization via HTML classes & attributes</p>
+                    </div>
+                    <div class="x22 ">
+                        <i class="far fa-star " style="font-size:20px; margin-right: 10px; "></i>
+                        <p>Smooth Animations</p>
+
+                    </div>
+
+                    <div class="x22 ">
+                        <i class="far fa-star " style="font-size:20px; margin-right: 10px; "></i>
+                        <p>Smooth Parallax for images & videos
+                        </p>
+                    </div>
+
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 pt-xl-5 pt-lg-5 pt-md-0 pt-sm-0 pt-0 x21 ">
+                    <div class="x22 ">
+                        <i class="far fa-star " style="font-size:20px; margin-right: 10px; "></i>
+                        <p>Developers ready: Webpack, Gulp, SCSS, Nunjucks, NPM</p>
+                    </div>
+                    <div class="x22 ">
+                        <i class="far fa-star " style="font-size:20px; margin-right: 10px; "></i>
+                        <p>Google Fonts</p>
+                    </div>
+                    <div class="x22 ">
+                        <i class="far fa-star " style="font-size:20px; margin-right: 10px; "></i>
+                        <p>Included generated HTML version (ready to use without developer tools)</p>
+                    </div>
+                    <div class="x22 ">
+                        <i class="far fa-star " style="font-size:20px; margin-right: 10px; "></i>
+                        <p>Google Maps</p>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+            <div class="circle3 bg-dark ">
+
+            </div>
+
+            <div class="row ">
+                <div class="col text-center ">
+                    <h4 class="x17 pb-4">and more... 🔥</h4>
+                </div>
+            </div>
+        </div>
+        <!-- section 12 -->
+        <div class="container-fluid bg-light ">
+            <div class="container p-5 ">
+                <div class="row pt-5 pb-5 ">
+                    <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-5 p-xl-5 p-lg-5 p-md-5 p-sm-0 p-0 ">
+                        <h1 class="display-1 ">Get Themebau</h1>
+                        <div class="progress d-xl-block d-lg-block d-md-block d-sm-none d-none ">
+                            <div class="progress-bar bg-dark " style="width:100%;height:1px "></div>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 pt-5 "><i class="fal fa-long-arrow-right p-xl-5 p-lg-5 p-md-5 p-sm-0 p-0 x23 "></i></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- flicity -->
+        <script src="https://unpkg.com/flickity@2.3.0/dist/flickity.pkgd.min.js "></script>
+        <script src="https://unpkg.com/flickity@2.3.0/dist/flickity.pkgd.js "></script>
+        <script>
+            var elem = document.querySelector('.main-carousel');
+            var flkty = new Flickity(elem, {
+                // options
+                cellAlign: 'left',
+                contain: true,
+                prevNextButtons: false
+            });
+        </script>
+        <script>
+            var elem = document.querySelector('.main-carousel2');
+            var flkty = new Flickity(elem, {
+                // options
+                cellAlign: 'left',
+                contain: true,
+                prevNextButtons: false
+            });
+        </script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+</body>
+
+</html>
